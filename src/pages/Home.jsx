@@ -37,7 +37,7 @@ const Home = () => {
       <h2 className="mb-1 text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-900">
         Raffle Draw
       </h2>
-      <p className="mb-12 text-lg text-gray-500">Some Information</p>
+      <p className="mb-12 text-lg text-gray-500">Prize List</p>
 
       <div className="w-full">
         {gifts.length === 0 ? (
@@ -49,7 +49,7 @@ const Home = () => {
 
               return (
                 <div
-                  key={gift.id}
+                  key={gift.Serial}
                   onClick={() => navigate(`/draw/${gift.Serial}`)}
                   className="cursor-pointer"
                 >
