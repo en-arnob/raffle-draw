@@ -50,10 +50,10 @@ const Home = () => {
               return (
                 <div
                   key={gift.id}
-                  onClick={() => navigate(`/first?prize=${gift.Serial}`)}
+                  onClick={() => navigate(`/draw/${gift.Serial}`)}
                   className="cursor-pointer"
                 >
-                  <div className="relative h-[200px] sm:h-[250px] w-full group">
+                  <div className="relative h-[200px] sm:h-[200px] w-full group">
                     <span
                       className={`absolute top-0 left-0 w-full h-full mt-1 ml-1 ${
                         color.split(" ")[2]
